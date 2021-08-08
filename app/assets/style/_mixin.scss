@@ -1,0 +1,19 @@
+@mixin hide-text {
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin a-hover {
+    transition: 0.5s;
+            transform: scale(1.5);
+            color: rgb(237, 241, 170);
+            font-weight: bold;
+}
+
+
+
+
+
+
+

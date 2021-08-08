@@ -1,0 +1,29 @@
+.banner {
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 840px;
+    text-align: end;
+    & .container{
+        border: 1px solid blue;
+    }
+    & .banner-content {
+        h1 {
+            font-size: $fz-xl;
+        }
+        p {
+            font-size: 64px;
+            line-height: 96px;
+        }
+    }
+}
+@include pad {
+    & .banner-content {
+        font-size: $fz-xxl;
+        margin-right: 38.5px;
+        h1 {
+            font-size: $fz-m;
+        }
+    }
+}
