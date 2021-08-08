@@ -170,6 +170,9 @@ a {
 .me-32 {
   margin-right: 32px; }
 
+.me-30 {
+  margin-right: 30px; }
+
 .me-22 {
   margin-right: 22px; }
 
@@ -199,6 +202,9 @@ a {
 
 .mb-16 {
   margin-bottom: 16px; }
+
+.mx-15 {
+  max-width: 0 15px; }
 
 .w-100 {
   width: 100%; }
@@ -357,19 +363,82 @@ a {
   height: 840px;
   text-align: end; }
   .banner .container {
-    border: 1px solid blue; }
+    width: 100%; }
   .banner .banner-content h1 {
     font-size: 36px; }
   .banner .banner-content p {
     font-size: 64px;
     line-height: 96px; }
 
-@media (max-width: 768px) {
-  .banner-content {
-    font-size: 48px;
-    margin-right: 38.5px; }
-    .banner-content h1 {
+@media (max-width: 992px) {
+  .banner .container {
+    max-width: 768px; }
+  .banner .banner-content {
+    font-size: 48px; }
+    .banner .banner-content h1 {
       font-size: 20px; } }
+
+@media (max-width: 768px) {
+  .banner .container {
+    max-width: 576px; }
+  .banner .banner-content {
+    font-size: 32px; }
+    .banner .banner-content h1 {
+      font-size: 16px; } }
+
+.profashion h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  padding-top: 60px; }
+
+.profashion .profashion-item {
+  width: 255px; }
+  .profashion .profashion-item h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #AA0601; }
+  .profashion .profashion-item p {
+    text-align: left;
+    line-height: 24px;
+    margin: 8px 0 80px; }
+
+.profashion .profashion-img {
+  height: 100px;
+  margin: 48px 0 24px; }
+
+@media (max-width: 992px) {
+  .profashion h2 {
+    font-size: 32px; }
+  .profashion .container {
+    max-width: 768px; }
+  .profashion .profashion-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .profashion .profashion-item {
+    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .profashion .profashion-item p {
+      width: 255px;
+      -ms-flex-item-align: center;
+          align-self: center; } }
+
+@media (max-width: 768px) {
+  .profashion h2 {
+    font-size: 24px; }
+  .profashion .container {
+    max-width: 576px; }
+  .profashion .profashion-item {
+    width: 100%;
+    margin-bottom: -40px; }
+    .profashion .profashion-item p {
+      width: 255px; } }
 
 .faq h2 {
   border-left: solid 8px #AA0601;
