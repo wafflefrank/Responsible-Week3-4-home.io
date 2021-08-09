@@ -9,7 +9,7 @@
         width: 100%;
     }
     & .banner-content {
-        h1 {
+        h2 {
             font-size: $fz-xl;
         }
         p {
@@ -25,7 +25,7 @@
         }
         & .banner-content {
             font-size: $fz-xxl;
-            h1 {
+            h2 {
                 font-size: $fz-m;
             }
         }
@@ -38,7 +38,7 @@
         }
         & .banner-content {
             font-size: 32px;
-            h1 {
+            h2 {
                 font-size: $fz-base;
             }
         }
@@ -106,6 +106,313 @@
             p {
                 width: 255px;
             }
+        }
+    }
+}
+// 經典系列
+.classic-glass {
+    text-align: center;
+    h2 {
+        margin: 60px 0 40px 0;
+    }
+    p {
+        font-size: $fz-xxl;
+        color: #aa0601;
+        font-style: italic;
+        font-weight: 900;
+    }
+    & .img-size {
+        width: 635px;
+    }
+}
+@include desktop {
+    .classic-glass {
+        & .container {
+            max-width: 768px;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        ul li {
+            flex-direction: row;
+        }
+        & .classic-title {
+            margin-left: 30px;
+            p {
+                font-size: 28px;
+            }
+        }
+        & .img-size {
+            width: 390px;
+        }
+    }
+}
+@include pad {
+    .classic-glass {
+        & .container {
+            max-width: 576px;
+        }
+        h2 {
+            font-size: $fz-m;
+            margin: 20px 0 32px;
+        }
+        li {
+            position: relative;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+        & .classic-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: 0;
+            img {
+                width: 37px;
+                height: 37px;
+            }
+            p {
+                font-size: 28px;
+            }
+        }
+    }
+}
+// 聯名設計
+.co-design {
+    height: 705px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    h2 {
+        font-size: $fz-xxl;
+        color: $light;
+        font-weight: bold;
+        text-align: center;
+        padding: 60px 0 40px;
+    }
+    li {
+        position: relative;
+        background-color: $light;
+        overflow: hidden;
+        img {
+            opacity: 0.5;
+            display: block;
+        }
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $primary;
+            font-size: 72px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+@include desktop {
+    .co-design {
+        height: 452px;
+        padding-bottom: 23px;
+        &.container {
+            max-width: 768px;
+        }
+        h2 {
+            font-size: 32px;
+            padding: 32px 0 40px;
+        }
+        li {
+            p {
+                font-size: 32px;
+            }
+        }
+    }
+}
+@include pad {
+    .co-design {
+        height: 719px;
+        &.container {
+            max-width: 576px;
+        }
+        h2 {
+            font-size: $fz-m;
+            padding: 32px 0 20px;
+        }
+        ul {
+            flex-wrap: wrap;
+            justify-content: center;
+            li {
+                max-width: 100%;
+                margin: 0 15px 15px 15px;
+                img {
+                    width: 345px;
+                    height: 291px;
+                }
+            }
+        }
+    }
+}
+// 顧客推薦
+.recommend {
+    h2 {
+        margin: 60px 0 40px 0;
+        text-align: center;
+    }
+    li {
+        width: 255px;
+        border: 1px solid #dee2e6;
+        border-radius: 50px 4px 0px 0px;
+        box-shadow: 0px 2px 6px #00000029;
+        padding-bottom: 16px;
+        img {
+            border-radius: 4px 4px 0px 0px;
+        }
+        h3 {
+            font-size: $fz-sm;
+            font-weight: 500;
+            margin: 16px 16px 8px;
+        }
+        p {
+            margin: 0 16px 8px;
+            line-height: $line-heigt-base;
+        }
+        span {
+            color: #707070;
+            font-size: $fz-sm;
+            margin-left: 16px;
+        }
+    }
+}
+@include desktop {
+    .recommend {
+        .container {
+            max-width: 768px;
+        }
+        ul {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        li {
+            width: 45%;
+            margin: 0 15px 32px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+@include pad {
+    .recommend {
+        .container {
+            max-width: 576px;
+        }
+        h2 {
+            font-size: $fz-m;
+            margin: 32px 0 20px;
+        }
+        ul {
+            justify-content: center;
+        }
+        li {
+            width: 345px;
+            margin: 0 15px 32px;
+            img {
+                width: 345px;
+            }
+        }
+    }
+}
+// 顧客聯繫
+.contact {
+    text-align: center;
+    background: #aa06010d;
+    & .contact-info {
+        max-width: 730px;
+        margin: 0 auto;
+    }
+    h2 {
+        padding-top: 60px;
+        margin: 60px 0 24px ;
+    }
+    p {
+        font-size: $fz-m;
+        text-align: start;
+    }
+    & .form-group {
+        font-size: $fz-base;
+        text-align: start;
+        & .box-content {
+            width: 100%;
+            padding: 14px 0 15px 16px;
+            background-color: #fbf2f2;
+            opacity: 1;
+            border: 1px solid black;
+            margin-bottom: 16px;
+        }
+    }
+    & .w-350 {
+        width: 350px;
+        border: 0;
+    }
+    & .boxStyle {
+        text-align: start;
+    }
+    & .pb-100 {
+        padding-bottom: 100px;
+    }
+}
+@include desktop {
+    .contact {
+        .contact-info {
+            max-width: 450px;
+        }
+        h2{
+            font-size: 32px;
+        }
+        p {
+            margin-bottom: 16px;
+            font-size: $fz-base;
+        }
+        & .square label {
+            font-size: $fz-sm;
+        }
+        & .boxStyle {
+            margin-bottom: 20px;
+        }
+        & .w-350 {
+            margin-bottom: 56px;
+        }
+    }
+}
+@include pad {
+    .contact {
+        & .contact-info {
+            max-width: 345px;
+            padding: 0 15px;
+        }
+        & .box-content {
+            max-width: 329px;
+        }
+        h2 {
+            font-size: $fz-m;
+        }
+        h3 {
+            font-size: $fz-sm;
+        }
+        p {
+            margin-bottom: 8px;
+        }
+        & .box-content {
+            margin-bottom: 8px;
+        }
+        & .boxStyle {
+            margin-bottom: 20px;
+        }
+        & .w-350 {
+            width: 165px;
+            margin-bottom: 40px;
         }
     }
 }
